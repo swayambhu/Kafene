@@ -15,10 +15,12 @@ $(document).ready(function(){
     // }
     }else if (localStorage.getItem("loggedIn") === "false" || localStorage.getItem("loggedIn")==="null") {
       // location.replace("../HTML/login.html");
+      console.log("not logged")
       $(".nav-links").css("cursor", "not-allowed");
       // $("main").hide();
       if (location.pathname != "/html/login") {
         location.replace("/html/login");
+        console.log("logged out in")
       }
 
       $("#logout").remove();

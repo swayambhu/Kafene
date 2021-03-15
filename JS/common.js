@@ -13,7 +13,7 @@ $(document).ready(function(){
         });
         // ;
     // }
-    }else if (localStorage.getItem("loggedIn") === "false" || localStorage.getItem("loggedIn")===null) {
+    }else if (localStorage.getItem("loggedIn") === "false" || localStorage.getItem("loggedIn")==="null") {
       // location.replace("../HTML/login.html");
       $(".nav-links").css("cursor", "not-allowed");
       // $("main").hide();

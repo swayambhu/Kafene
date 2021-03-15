@@ -4,7 +4,7 @@ $(document).ready(function(){
     // console.log(localStorage.getItem("loggedIn"));
     if(localStorage.getItem("loggedIn") === "true"){
         $(".right-menu").add('<h4 class="nav-links" id="logout">logout</h4>');
-        if (location.pathname ==="/HTML/login.html") {
+        if (location.pathname === "/html/login") {
           location.replace("../HTML/orders.html");
         }
         $(".nav-links").click(function () {

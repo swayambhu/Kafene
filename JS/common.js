@@ -13,15 +13,15 @@ $(document).ready(function(){
         });
         // ;
     // }
-    }else{
-        // location.replace("../HTML/login.html");
-        $(".nav-links").css("cursor", "not-allowed");
-        // $("main").hide();
-        if(location.pathname != "/HTML/login.html"){
-          location.replace("../HTML/login.html");
-        }
-        
-        $("#logout").remove();
+    }else if (localStorage.getItem("loggedIn") === "false" || localStorage.getItem("loggedIn")===null) {
+      // location.replace("../HTML/login.html");
+      $(".nav-links").css("cursor", "not-allowed");
+      // $("main").hide();
+      if (location.pathname != "/HTML/login.html") {
+        location.replace("../HTML/login.html");
+      }
+
+      $("#logout").remove();
     }
 
     

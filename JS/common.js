@@ -5,7 +5,7 @@ $(document).ready(function(){
     if(localStorage.getItem("loggedIn") === "true"){
         $(".right-menu").add('<h4 class="nav-links" id="logout">logout</h4>');
         if (location.pathname === "/html/login") {
-          location.replace("../HTML/orders.html");
+          location.replace("/html/orders");
         }
         $(".nav-links").click(function () {
           $(".nav-links").removeClass("active");
@@ -17,8 +17,8 @@ $(document).ready(function(){
       // location.replace("../HTML/login.html");
       $(".nav-links").css("cursor", "not-allowed");
       // $("main").hide();
-      if (location.pathname != "/HTML/login.html") {
-        location.replace("../HTML/login.html");
+      if (location.pathname != "/html/login") {
+        location.replace("/html/login");
       }
 
       $("#logout").remove();
